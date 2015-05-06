@@ -35,5 +35,5 @@ require_once('library/custom-header.php');
 
 // Image Sizes
 
-add_image_size('home-thumbnail', 640, 400, true);
+add_image_size('home-thumbnail', 640, 400, array('center', 'top'));
 

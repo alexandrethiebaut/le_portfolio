@@ -1,0 +1,25 @@
+// Global style for le menu ;)
+@media #{$small-up} { 
+	#menu-off-canvas {
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 1003;
+		line-height: 0;
+		padding: 20px;
+		background-color: $secondary-color;
+		color: $white;
+		-webkit-transition: all 150ms;
+		-o-transition: all 150ms;
+		transition: all 150ms;
+		&:hover {
+			background-color: $primary-color;
+		}
+	}
+}
+
+@media #{$small-only} { 
+	#menu-off-canvas {
+		padding: 10px;
+	}
+}

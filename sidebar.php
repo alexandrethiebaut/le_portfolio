@@ -2,8 +2,18 @@
 	<?php do_action( 'foundationpress_before_sidebar' ); ?>
 	<div class="row">
 		<div class="small-offset-2 small-8 large-offset-3 large-6 columns">
+
+		<?php if(is_home()) : ?>
+
 			<h1><?php bloginfo('name'); ?></h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dignissimos iste, porro ducimus labore non ipsum modi recusandae, deserunt voluptas. Nobis consequatur est, hic laudantium quaerat beatae voluptas aliquid, perferendis inventore ut blanditiis, in soluta omnis ratione aspernatur consequuntur dolorum consectetur adipisci repellendus. Inventore eaque sint voluptate et totam eveniet hic facere quod. Odit fugiat, accusamus cupiditate molestiae vel aperiam unde porro quisquam error deserunt, veritatis earum suscipit esse autem recusandae amet provident perspiciatis a blanditiis ex qui incidunt magni. Aspernatur facilis voluptas vel est delectus magni exercitationem provident, quas earum iure ex nam explicabo perferendis nisi officiis praesentium nulla?</p>
+			
+					
+		<?php else : ?>
+		
+			<h1><?php single_cat_title(); ?></h1>
+			<p><?php echo category_description(); ?></p>
+
+		<?php endif; ?>
 	</div>
 	<?php do_action( 'foundationpress_after_sidebar' ); ?>
 </aside>

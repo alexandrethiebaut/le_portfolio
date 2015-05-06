@@ -4,8 +4,18 @@
 	<div class="small-12 large-8 columns" role="main">
 	<div class="row">
 		<div class="small-12 medium-offset-2 medium-8 large-12 large-offset-0 columns">
-			<?php wp_list_categories(array('title_li'	=> __( '' ),)); ?>
+
+			<div id="Container">
+
+				<?php $categories = (get_categories('child_of=2&hide_empty=0')); ?>
+
+				<?php foreach ($categories as $k => $v) : ?>
+					<div class="mix filter"><?php echo $v->cat_name; ?></div>
+				<?php endforeach; ?>
+			</div>
+
 		</div>
+
 	</div>
 	<div class="row">
 

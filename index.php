@@ -2,29 +2,25 @@
 <div class="row">
 	<?php get_sidebar(); ?>
 	<div class="small-12 large-8 columns" role="main">
-	<div class="row">
-		<div class="small-12 medium-offset-2 medium-8 large-12 large-offset-0 columns">
-			<?php wp_list_categories(array('title_li'	=> __( '' ),)); ?>
+	
+		<div class="row">
+
+			<?php if ( have_posts() ) : ?>
+
+				<?php do_action( 'foundationpress_before_content' ); ?>
+
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'content-home', get_post_format() ); ?>
+				<?php endwhile; ?>
+
+				<?php else : ?>
+					<?php get_template_part( 'content', 'none' ); ?>
+
+				<?php do_action( 'foundationpress_before_pagination' ); ?>
+
+			<?php endif;?>
+
 		</div>
-	</div>
-	<div class="row">
-
-		<?php if ( have_posts() ) : ?>
-
-			<?php do_action( 'foundationpress_before_content' ); ?>
-
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content-home', get_post_format() ); ?>
-			<?php endwhile; ?>
-
-			<?php else : ?>
-				<?php get_template_part( 'content', 'none' ); ?>
-
-			<?php do_action( 'foundationpress_before_pagination' ); ?>
-
-		<?php endif;?>
-
-	</div>
 
 	<?php if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
 		<nav id="post-nav">

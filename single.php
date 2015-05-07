@@ -8,24 +8,26 @@
 		
 		<article <?php post_class() ?> >
 
-			<header class="small-12 large-offset-1 large-3 columns">
+			<header class="small-offset-1 small-10 large-offset-1 large-3 columns">
 
 				<div class="row">
 
 					<div class="small-12 large-12 columns">
 						<h1 class="entry-title"><?php the_title(); ?></h1>
+						<hr>
 					</div>
 
-					<div class="small-12 large-3 end columns">
+					<div class="small-12 large-3 end columns"> <!-- A REPLACER AUTRE PART PARCE QUE LA C'ETAIT UN PEU NAZE -->
 
 						<?php previous_post_link('%link', '<span class="icon-chevron-left"></span>'); ?>
-						<a href="<?php echo get_category_link(1); ?>"><span class="icon-grid"></span></a>
+						<a href="<?php echo get_category_link(2); ?>"><span class="icon-grid"></span></a>
 						<?php next_post_link('%link', '<span class="icon-chevron-right"></span>'); ?>
 
 					</div>
 				</div>
 
 				<?php the_content(); ?>
+				<hr>
 
 			</header>
 

@@ -1,7 +1,7 @@
 </section>
 <footer class="row">
 	<?php do_action( 'foundationpress_before_footer' ); ?>
-	<?php dynamic_sidebar( 'footer-widgets' ); ?>
+	<?php // dynamic_sidebar( 'footer-widgets' ); ?>
 	<?php do_action( 'foundationpress_after_footer' ); ?>
 </footer>
 <a class="exit-off-canvas"></a>

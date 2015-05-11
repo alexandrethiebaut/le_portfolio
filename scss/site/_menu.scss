@@ -1,4 +1,14 @@
-// Global style for le menu ;)
+/*
+ * Quelques modificiations du code existant qui sont nécessaires
+ */
+.inner-wrap {
+	min-height: 100vh;
+}
+
+/*
+ * Global style for le menu ;)
+ */
+
 @media #{$small-up} { 
 	#menu-off-canvas {
 		position: fixed;
@@ -21,5 +31,20 @@
 @media #{$small-only} { 
 	#menu-off-canvas {
 		padding: 10px;
+	}
+}
+
+/*
+ * Style pour la nav entre articles
+ */
+
+@media #{$small-up} {
+	.nav-between-articles {
+		  text-align: center;
+		  position: fixed;
+		  left: 0;
+		  bottom: 0;
+		  padding: rem-calc(15);
+		  background: rgba($white, 1);
 	}
 }

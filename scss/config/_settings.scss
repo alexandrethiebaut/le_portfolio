@@ -230,7 +230,7 @@ $h3-font-size: rem-calc(18);
 $h6-font-size: rem-calc(10);
 
 // We use these to control header size reduction on small screens
-$h1-font-reduction: rem-calc(24);
+$h1-font-reduction: rem-calc(12);
 $h2-font-reduction: rem-calc(6);
 // $h3-font-reduction: rem-calc(5);
 // $h4-font-reduction: rem-calc(5);
@@ -279,7 +279,7 @@ $paragraph-text-rendering: optimizeLegibility;
 $hr-border-width: 1px;
 $hr-border-style: solid;
 $hr-border-color: $light-gray;
-$hr-margin: rem-calc(50);
+$hr-margin: rem-calc(40);
 
 // We use these to style lists
 // $list-font-family: $paragraph-font-family;
@@ -296,12 +296,12 @@ $hr-margin: rem-calc(50);
 // $definition-list-margin-bottom: rem-calc(12);
 
 // We use these to style blockquotes
-// $blockquote-font-color: scale-color($header-font-color, $lightness: 35%);
-// $blockquote-padding: rem-calc(9 20 0 19);
-// $blockquote-border: 1px solid $gainsboro;
-// $blockquote-cite-font-size: rem-calc(13);
-// $blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%);
-// $blockquote-cite-link-color: $blockquote-cite-font-color;
+$blockquote-font-color: scale-color($body-font-color, $lightness: 50%);
+$blockquote-padding: rem-calc(15);
+$blockquote-border: 1px solid $light-gray;
+$blockquote-cite-font-size: rem-calc(12);
+$blockquote-cite-font-color: scale-color($header-font-color, $lightness: 100%);
+$blockquote-cite-link-color: $blockquote-cite-font-color;
 
 // Acronym styles
 // $acronym-underline: 1px dotted $gainsboro;

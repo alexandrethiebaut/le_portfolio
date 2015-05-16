@@ -6,12 +6,12 @@
 	<?php while ( have_posts() ) : the_post(); ?>
 
 		<div class="entry-content small-12 large-7 right columns">
-				<?php the_post_thumbnail(); ?>
+				<?php the_post_thumbnail('showcase-thumbnail'); ?>
 			</div>
 
 		<article <?php post_class() ?> >
 
-			<header class="small-offset-1 small-10 large-offset-1 large-3 columns">
+			<header class="small-offset-1 small-10 large-offset-1 large-3 columns padding-page">
 
 				<div class="row">
 
@@ -25,26 +25,24 @@
 				<?php the_content(); ?>
 				<hr>
 
+				<div class="small-12 columns nav-between-articles">
+
+					<div class="small-4 columns "><?php previous_post_link('%link', '<span class="icon-chevron-left"></span>', TRUE, CAT_NON_CLASSE); ?></div>
+					<div class="small-4 columns "><a href="<?php echo get_category_link(CAT_PROJETS); ?>"><span class="icon-grid"></span></a></div>
+					<div class="small-4 columns "><?php next_post_link('%link', '<span class="icon-chevron-right"></span>', TRUE, CAT_NON_CLASSE); ?></div>
+
+				</div>
+
 			</header>
 
 			<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 
 			<div class="entry-content small-12 large-7 right columns">
-				<?php the_post_thumbnail(); ?>
+				<?php the_post_thumbnail('showcase-thumbnail'); ?>
 			</div>
 			<div class="entry-content small-12 large-7 right columns">
-				<?php the_post_thumbnail(); ?>
+				<?php the_post_thumbnail('showcase-thumbnail'); ?>
 			</div>
-			<div class="entry-content small-12 large-7 right columns">
-				<?php the_post_thumbnail(); ?>
-			</div>
-			<div class="entry-content small-12 large-7 right columns">
-				<?php the_post_thumbnail(); ?>
-			</div>
-			<div class="entry-content small-12 large-7 right columns">
-				<?php the_post_thumbnail(); ?>
-			</div>
-
 
 		</article>
 

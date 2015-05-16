@@ -1,16 +1,19 @@
 <aside id="sidebar" class="small-12 large-4 left columns">
 	<?php do_action( 'foundationpress_before_sidebar' ); ?>
 	<div class="row">
-		<div class="small-offset-2 small-8 large-offset-3 large-6 columns">
+		<div class="small-offset-2 small-8 large-offset-3 large-6 columns padding-page">
 
 		<?php if(is_home()) : ?>
 
-			<h1><?php bloginfo('name'); ?></h1>
-	
+			<?php $post_desc = get_post(POST_DESCRIPTION); ?>
+			
+			<h1><?php echo $post_desc->post_title?></h1>
+
 			<hr>
 
-			<?php $post_desc = get_post(30); ?>
 			<p><?php echo $post_desc->post_content; ?></p>
+
+			<hr>
 			
 		<?php else : ?>
 		

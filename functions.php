@@ -36,4 +36,10 @@ require_once('library/custom-header.php');
 // Image Sizes
 
 add_image_size('home-thumbnail', 640, 400, array('center', 'top'));
+add_image_size('showcase-thumbnail', 1120, 520, array('center', 'center'));
+
+// Definition des constantes
+define('POST_DESCRIPTION', 30);
+define('CAT_PROJETS', 2);
+define('CAT_NON_CLASSE', 1);
 

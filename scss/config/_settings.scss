@@ -858,8 +858,8 @@ $include-html-off-canvas-classes: $include-html-classes;
 // Off Canvas Menu Variables
 $off-canvas-width: rem-calc(260);
 $off-canvas-bg: $secondary-color;
-// $off-canvas-bg-hover: scale-color($tabbar-bg, $lightness: -30%);
-// $off-canvas-bg-active: scale-color($tabbar-bg, $lightness: -30%);
+$off-canvas-bg-hover: none;
+$off-canvas-bg-active: none;
 
 // Off Canvas Menu List Variables
 // $off-canvas-label-padding: .3rem rem-calc(15);
@@ -871,9 +871,9 @@ $off-canvas-bg: $secondary-color;
 // $off-canvas-label-border-top: 1px solid scale-color($off-canvas-label-bg, $lightness: 14%);
 // $off-canvas-label-border-bottom: none;
 // $off-canvas-label-margin:0;
-// $off-canvas-link-padding: rem-calc(10, 15);
-// $off-canvas-link-color: rgba($white, .7);
-// $off-canvas-link-border-bottom: 1px solid scale-color($off-canvas-bg, $lightness: -25%);
+$off-canvas-link-padding: rem-calc(20);
+$off-canvas-link-color: rgba($white, 1);
+$off-canvas-link-border-bottom: none;
 // $off-canvas-back-bg: #444;
 // $off-canvas-back-border-top: $off-canvas-label-border-top;
 // $off-canvas-back-border-bottom: $off-canvas-label-border-bottom;

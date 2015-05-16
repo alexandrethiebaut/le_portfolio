@@ -2,10 +2,12 @@
 <div class="row">
 	<?php get_sidebar(); ?>
 	<div class="small-12 large-8 columns" role="main">
-	
+
 		<div class="row">
 
 			<?php if ( have_posts() ) : ?>
+				
+				<?php query_posts(array('cat' => CAT_PROJETS)); ?>
 
 				<?php do_action( 'foundationpress_before_content' ); ?>
 
@@ -17,6 +19,8 @@
 					<?php get_template_part( 'content', 'none' ); ?>
 
 				<?php do_action( 'foundationpress_before_pagination' ); ?>
+
+				<?php wp_reset_query(); ?>
 
 			<?php endif;?>
 

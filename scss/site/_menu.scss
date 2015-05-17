@@ -18,20 +18,21 @@
 		text-transform: uppercase;
 		ul {
 			li {
+				a {
 				-webkit-transition: all 150ms;
 				-o-transition: all 150ms;
 				transition: all 150ms;
-				&:hover {
-					a {
-						color: $primary-color;
-						position: relative;
+					&:hover {
+					color: $primary-color;
+					position: relative;
 						&:before {
 							position: absolute;
-							left: 75px;
+							left: 65px;
 							font-family: 'icomoon';
 							content: "\e6f7";
 						}
-					}
+					}	
+					
 				}
 			}
 		}

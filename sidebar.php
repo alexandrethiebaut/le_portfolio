@@ -8,23 +8,21 @@
 			<?php $post_desc = get_post(POST_DESCRIPTION); ?>
 			
 			<h1><?php echo $post_desc->post_title?></h1>
-
 			<hr>
-
 			<p><?php echo $post_desc->post_content; ?></p>
-
 			<hr>
 			
 		<?php else : ?>
 		
 			<h1><?php single_cat_title(); ?></h1>
+			<hr>
 			<p><?php echo category_description(); ?></p>
+			<hr>
 
 		<?php endif; ?>
 
 		<?php if(is_category()) : ?>
 			
-			<!-- A REVOIR -->
 			<div class="row">
 				<div class="small-12 medium-offset-2 medium-8 large-12 large-offset-0 columns">
 

@@ -6,6 +6,8 @@
 </footer>
 <a class="exit-off-canvas"></a>
 
+<div id="loading"></div>
+
 	<?php do_action( 'foundationpress_layout_end' ); ?>
 	</div>
 </div>

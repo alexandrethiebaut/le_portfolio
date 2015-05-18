@@ -23,7 +23,7 @@
 
 		<?php if(is_category()) : ?>
 			
-			<div class="row">
+			<!-- <div class="row">
 				<div class="small-12 medium-offset-2 medium-8 large-12 large-offset-0 columns">
 
 					<div>
@@ -38,7 +38,7 @@
 
 				</div>
 
-			</div>
+			</div> -->
 
 		<?php endif; ?>
 

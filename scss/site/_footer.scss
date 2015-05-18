@@ -1,8 +1,24 @@
+
 // Add some whitespace above the footer for medium-up screens
+
 @media #{$medium-up} {
 	footer.row {
 		height: rem-calc(0);
 		background: rgba($jet, 1);
 
+	}
+}
+
+// FOOTER
+
+@media #{$small-up} {
+	#loading {
+		position: absolute; 
+		left: 0; 
+		right: 0; 
+		top: 0; 
+		bottom: 0; 
+		background: $white;
+		z-index: 9999;
 	}
 }

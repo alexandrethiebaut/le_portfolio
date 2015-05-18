@@ -1,14 +1,17 @@
 $(document).ready(function() {
-	
-	// Off Canvas est fixed
 
-	$(window).scroll(function(event) {
-		
-		var yes = $(window).scrollTop();
+	//	Off canvas is fixed
+		$(window).bind('scroll', function(event) {
 
-		$('#main-menu').offset( {'top' : yes });
+			var valueScroll = $(window).scrollTop();
 
+			// $('#main-menu').offset( { 'top' : valueScroll } );
+			// $('#main-menu').addClass('menuFixPD');
+		});
 
-	});
-
+	//	Effet de loading
+		$(window).load(function() {
+			$('#loading').delay(1000).fadeOut(400);
+		});
 });
+

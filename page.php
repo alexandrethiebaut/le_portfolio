@@ -9,9 +9,9 @@
 		<div class="small-offset-1 small-10 medium-offset-2 medium-8 large-4 columns padding-page" role="main">
 
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-				<header>
-					<h1 class="entry-title"><?php the_title(); ?></h1>
-				</header>
+
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<hr>
 				<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
 				<div class="entry-content">
 					<?php the_content(); ?>

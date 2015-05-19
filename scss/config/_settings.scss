@@ -856,7 +856,7 @@ $include-html-off-canvas-classes: $include-html-classes;
 // $tabbar-header-margin: 0;
 
 // Off Canvas Menu Variables
-$off-canvas-width: rem-calc(260);
+$off-canvas-width: 100vw;
 $off-canvas-bg: $secondary-color;
 $off-canvas-bg-hover: none;
 $off-canvas-bg-active: none;
@@ -901,8 +901,8 @@ $off-canvas-overlay-transition: background 150ms ease-in-out;
 $off-canvas-overlay-cursor: pointer;
 $off-canvas-overlay-box-shadow: none;
 // $off-canvas-overlay-box-shadow: -4px 0 4px rgba($black, .5), 4px 0 4px rgba($black, .5);
-$off-canvas-overlay-background: rgba($white, .85);
-$off-canvas-overlay-background-hover: rgba($white, .85);
+$off-canvas-overlay-background: rgba($secondary-color, .85);
+$off-canvas-overlay-background-hover: rgba($secondary-color, .85);
 
 // Transition Variables
 // $menu-slide: "transform 500ms ease";

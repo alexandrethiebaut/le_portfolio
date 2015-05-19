@@ -39,7 +39,6 @@
 	
 	<a class="left-off-canvas-toggle menu-icon" id="menu-off-canvas" href="#"><span class="icon-menu"></span></a>
 
-
 	<?php get_template_part( 'parts/off-canvas-menu' ); ?>
 
 <section class="container" role="document">

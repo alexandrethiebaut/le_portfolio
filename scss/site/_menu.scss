@@ -72,21 +72,17 @@
 }
 
 /*
- * Style pour la nav entre articles
+ * Style pour la nav entre articles - Mettre dans _article.scss
  */
 
 @media #{$small-up} {
 	.nav-between-articles {
-		div{
-			text-align: center;
-			&:first-child {
-				text-align: left;
-			}
-			&:last-child {
-				text-align: right;
-			}
-		}
+		text-align: center;
 		// padding: rem-calc(0);
 		background: rgba($white, 1);
+		.icon-grid {
+			position: relative;
+			left: 2px;
+		}
 	}
 }

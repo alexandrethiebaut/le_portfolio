@@ -25,11 +25,11 @@
 				<?php the_content(); ?>
 				<hr>
 
-				<div class="small-12 columns nav-between-articles">
+				<div class="small-12 small-centered columns nav-between-articles">
 					
-					<div class="small-4 columns left"><?php previous_post_link('%link', '<span class="icon-chevron-left"></span>', TRUE, CAT_NON_CLASSE); ?></div>
-					<div class="small-4 columns end"><a href="<?php echo get_category_link(CAT_PROJETS); ?>"><span class="icon-grid"></span></a></div>
-					<div class="small-4 columns right"><?php next_post_link('%link', '<span class="icon-chevron-right"></span>', TRUE, CAT_NON_CLASSE); ?></div>
+					<?php previous_post_link('%link', '<span class="icon-chevron-left"></span>', TRUE, CAT_NON_CLASSE); ?>
+					<a href="<?php echo get_category_link(CAT_PROJETS); ?>"><span class="icon-grid"></span></a>
+					<?php next_post_link('%link', '<span class="icon-chevron-right"></span>', TRUE, CAT_NON_CLASSE); ?>
 
 				</div>
 

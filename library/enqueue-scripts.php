@@ -29,6 +29,9 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	//MixItUp
 	// wp_register_script( 'mixitup', get_template_directory_uri() . '/js/vendor/jquery.mixitup.js', array('jquery'));
 
+	//Smooth Scroll
+	//wp_register_script( 'smoothscroll', get_template_directory_uri() . '/js/vendor/smoothscroll.js', array('jquery'));
+
 	//My JavaScript File
 	wp_register_script( 'customJS', get_template_directory_uri() . '/js/custom/custom.js', array('jquery'));
 
@@ -38,6 +41,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'foundation' );
 	// wp_enqueue_script( 'mixitup');
+	//wp_enqueue_script( 'smoothscroll');
 	wp_enqueue_script( 'customJS' );
 
 	}

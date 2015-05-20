@@ -6,6 +6,10 @@
 		position: relative;
 		background: rgba($snow, 1);
 		overflow: hidden;
+		a {
+			display: table-cell;
+			vertical-align: middle;
+		}
 		* {
 			-webkit-transition: all 500ms;
 			-o-transition: all 500ms;
@@ -15,13 +19,15 @@
 			opacity: 1;
 			max-width: 100% !important;
 		}
-		h2 {
-			width: 100%;
-			display: block;
+		div {
+			margin: auto;
 			position: absolute;
 			left: -800px;
-			bottom: rem-calc(50);
 			z-index: 800;
+
+		}
+		h2 {
+			// bottom: rem-calc(50);
 			color: $secondary-color;
 			padding: rem-calc(20);
 			padding-bottom: 0;
@@ -34,6 +40,9 @@
 				opacity: .15;
 			}
 			h2 {
+				left: 0;
+			}
+			div {
 				left: 0;
 			}
 		}
@@ -52,4 +61,10 @@
 			font-size: $h3-font-size;
 		}
 	}
+}
+
+
+.inset-shadow {
+	-webkit-box-shadow: 30px 0 30px -30px rgba($jet, .25) inset;
+	box-shadow: 30px 0 30px -30px rgba($jet, .25) inset;
 }

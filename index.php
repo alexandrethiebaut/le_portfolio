@@ -3,7 +3,7 @@
 	<?php get_sidebar(); ?>
 	<div class="small-12 large-8 columns" role="main">
 
-		<div class="row">
+		<div class="row collapse">
 
 			<?php if ( have_posts() ) : ?>
 				

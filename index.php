@@ -4,7 +4,8 @@
 	<div class="small-12 large-8 columns" role="main">
 
 		<div class="row collapse">
-
+			
+			<ul class="small-block-grid-1 medium-block-grid-2">
 			<?php if ( have_posts() ) : ?>
 				
 				<?php query_posts(array('cat' => CAT_PROJETS)); ?>
@@ -23,6 +24,7 @@
 				<?php wp_reset_query(); ?>
 
 			<?php endif;?>
+			</ul>
 
 		</div>
 

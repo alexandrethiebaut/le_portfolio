@@ -1,0 +1,7 @@
+// Déclaration des mixins
+
+@mixin transition($who, $length, $type) {
+	-webkit-transition: $who $length $type;
+	-o-transition: $who $length $type;
+	transition: $who $length $type;
+};

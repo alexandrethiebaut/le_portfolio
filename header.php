@@ -37,9 +37,11 @@
 	
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 	
-	<a class="left-off-canvas-toggle menu-icon" id="menu-off-canvas" href="#"><span class="icon-menu"></span></a>
+	<a class="menu-icon" id="menu-off-canvas" href="#"><span class="icon-menu"></span></a>
 
-	<?php get_template_part( 'parts/off-canvas-menu' ); ?>
+	<?php //get_template_part( 'parts/off-canvas-menu' ); ?>
+	<?php get_template_part( 'parts/menu-overlay' ); ?>
+
 
 <section class="container" role="document">
 	<?php do_action( 'foundationpress_after_header' ); ?>

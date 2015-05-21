@@ -10,6 +10,7 @@
 */
 
 /*
+	Google Fonts : 
 	J'importe mes fonts custom ;)	
 */
 @import url(http://fonts.googleapis.com/css?family=Merriweather:300italic,300,700|Oxygen:300);
@@ -17,6 +18,12 @@
 
 @import "config/settings"; // Default settings file. Uncomment each setting you need to change
 // @import "config/custom-settings"; // Or copy the stuff you need to change to this file and uncomment
+
+/*
+	Mixins :
+	Import des mes mixins trop stylés	
+*/
+@import "config/mixins";
 
 @import "../bower_components/foundation/scss/foundation/components/grid";
 // @import "../bower_components/foundation/scss/foundation/components/accordion";
@@ -53,15 +60,15 @@
 // @import "../bower_components/foundation/scss/foundation/components/tooltips";
 // @import "../bower_components/foundation/scss/foundation/components/top-bar";
 @import "../bower_components/foundation/scss/foundation/components/type";
-@import "../bower_components/foundation/scss/foundation/components/offcanvas";
-// @import "../bower_components/foundation/scss/foundation/components/visibility";
+// @import "../bower_components/foundation/scss/foundation/components/offcanvas";
+@import "../bower_components/foundation/scss/foundation/components/visibility";
 
 /* 
   Font Awesome - (http://fontawesome.io/) :
   Feel free to remove the import statement below if you don't plan to use icon-fonts in your project
 */
 
-@import "../assets/fontawesome/scss/font-awesome.scss";
+// @import "../assets/fontawesome/scss/font-awesome.scss";
 
 
 /* 
@@ -77,3 +84,5 @@
 @import "site/menu";
 @import "site/main";
 @import "site/home";
+
+

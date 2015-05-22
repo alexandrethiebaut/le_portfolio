@@ -6,10 +6,6 @@
 		position: relative;
 		background: rgba($snow, 1);
 		overflow: hidden;
-		a {
-			display: table-cell;
-			vertical-align: middle;
-		}
 		* {
 			-webkit-transition: all 500ms;
 			-o-transition: all 500ms;
@@ -19,14 +15,11 @@
 			opacity: 1;
 			max-width: 100% !important;
 		}
-		div {
-			margin: auto;
+		h2 {
+			min-width: 100%;
 			position: absolute;
 			left: -800px;
 			z-index: 800;
-
-		}
-		h2 {
 			// bottom: rem-calc(50);
 			color: $secondary-color;
 			padding: rem-calc(20);
@@ -40,9 +33,6 @@
 				opacity: .15;
 			}
 			h2 {
-				left: 0;
-			}
-			div {
 				left: 0;
 			}
 		}

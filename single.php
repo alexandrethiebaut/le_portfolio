@@ -6,8 +6,8 @@
 	<?php while ( have_posts() ) : the_post(); ?>
 
 		<div class="entry-content small-12 large-7 right columns">
-				<?php the_post_thumbnail('showcase-thumbnail'); ?>
-			</div>
+			<?php the_post_thumbnail('showcase-thumbnail'); ?>
+		</div>
 
 		<article <?php post_class() ?> >
 
@@ -37,12 +37,15 @@
 
 			<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 
-			<div class="entry-content small-12 large-7 right columns">
-				<?php the_post_thumbnail('showcase-thumbnail'); ?>
-			</div>
-			<div class="entry-content small-12 large-7 right columns">
-				<?php the_post_thumbnail('showcase-thumbnail'); ?>
-			</div>
+			<?php $field = get_fields(); ?>
+
+			<?php foreach ($field as $k => $v) : ?>
+			
+				<div class="entry-content small-12 large-7 right columns">
+					<img src="<?php echo $field[$k]['sizes']['showcase-thumbnail']; ?>" alt="<?php echo $field[$k]['title']; ?>">
+				</div>
+
+			<?php endforeach; ?>
 
 		</article>
 

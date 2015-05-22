@@ -39,7 +39,8 @@ add_image_size('home-thumbnail', 640, 400, array('center', 'top'));
 add_image_size('showcase-thumbnail', 1120, 520, array('center', 'center'));
 
 // Definition des constantes
-define('POST_DESCRIPTION', 30);
-define('CAT_PROJETS', 2);
-define('CAT_NON_CLASSE', 1);
+define('POST_DESCRIPTION', $polylang->model->get_translation('post', 30, pll_current_language()));
+define('CAT_PROJETS', $polylang->model->get_translation('category', 2, pll_current_language()));
+define('CAT_NON_CLASSE', $polylang->model->get_translation('category', 1, pll_current_language()));
 
+error_reporting(E_ALL ^ E_WARNING);

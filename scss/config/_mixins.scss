@@ -5,3 +5,10 @@
 	-o-transition: $who $length $type;
 	transition: $who $length $type;
 };
+
+@mixin transform($transform-type, $value) {
+	-webkit-transform: $transform-type+'(#{$value})';
+	-ms-transform: $transform-type+'(#{$value})';
+	-o-transform: $transform-type+'(#{$value})';
+	transform: $transform-type+'(#{$value})';
+};

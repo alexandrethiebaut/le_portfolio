@@ -97,6 +97,8 @@
 }
 
 #menu-overlay {
+	@include transform(translateX, -100%);
+	@include transition(all, 500ms, ease);
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -104,11 +106,9 @@
 	right: 0;
 	z-index: 999;
 	background: rgba($secondary-color, .97);
-	transform: translateX(-100%);
 	padding-top: rem-calc(80);
-	@include transition(all, 500ms, ease);
 	&.active {
-		transform: translateX(0);
+		@include transform(translateX, 0);
 	}
 
 }

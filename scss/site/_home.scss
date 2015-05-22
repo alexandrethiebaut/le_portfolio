@@ -7,16 +7,14 @@
 		background: rgba($snow, 1);
 		overflow: hidden;
 		* {
-			-webkit-transition: all 500ms;
-			-o-transition: all 500ms;
-			transition: all 500ms;
+			@include transition(all, 500ms, ease-in-out);
 		}
 		img {
 			opacity: 1;
 			max-width: 100% !important;
 		}
 		h2 {
-			min-width: 100%;
+			width: 100%;
 			position: absolute;
 			left: -800px;
 			z-index: 800;

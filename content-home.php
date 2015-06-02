@@ -10,6 +10,7 @@
 <article <?php post_class('small-12 medium-6 large-6 large-offset-0 columns end'); ?>>
 	<header class="home-thumb">
 		<a href="<?php the_permalink(); ?>">
+			<div class="thumb-overlay"></div>
 			<h2><?php the_title() ?></h2>
 			<?php the_post_thumbnail('home-thumbnail');?>
 		</a>

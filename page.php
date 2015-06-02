@@ -1,10 +1,19 @@
 <?php get_header(); ?>
 
+<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+
+<div class="show-for-large-up pos-full" style="background-image: url('<?php echo $url; ?>');"></div>
+
+
 <div class="row">
 
 	<?php do_action( 'foundationpress_before_content' ); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
+
+		<div class="small-12 columns right hide-for-large-up">
+			<?php the_post_thumbnail(); ?>
+		</div>
 
 		<div class="small-offset-1 small-10 medium-offset-2 medium-8 large-4 columns padding-page" role="main">
 
@@ -27,9 +36,7 @@
 		</div>
 
 		<div class="small-12 large-4 columns right">
-			<?php the_post_thumbnail(); ?>
 		</div>
-
 		
 	<?php endwhile;?>
 

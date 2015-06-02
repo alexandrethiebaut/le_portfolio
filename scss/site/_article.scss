@@ -1,0 +1,38 @@
+@media #{$small-up} {
+	.padding-page {
+		padding-top: rem-calc(70);
+		padding-bottom: rem-calc(50);
+	}
+	h1, h2 {
+		letter-spacing: rem-calc(2);
+	}
+}
+
+@media #{$small-only} {
+	.container {
+		margin-top: rem-calc(40);
+	}
+}
+
+@media #{$medium-only} {
+	.container {
+		margin-top: rem-calc(50);
+	}
+}
+
+/*
+ * Style pour la nav entre articles
+ */
+
+
+@media #{$small-up} {
+	.nav-between-articles {
+		text-align: center;
+		// padding: rem-calc(0);
+		background: rgba($white, 1);
+		.icon-grid {
+			position: relative;
+			left: 2px;
+		}
+	}
+}

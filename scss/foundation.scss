@@ -77,9 +77,14 @@
 */ 
 
 @import "site/global";
+//---------------------------
 @import "site/main";
 @import "site/menu";
+//---------------------------
 @import "site/home";
+@import "site/article";
+@import "site/page";
+//---------------------------
 @import "site/footer";
 
 

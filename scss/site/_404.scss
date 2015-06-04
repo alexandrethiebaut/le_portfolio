@@ -1,0 +1,7 @@
+@media #{$small-up} {
+	.error404 {
+		h2 {
+			font-size: rem-calc(160) !important;
+		}
+	}
+}

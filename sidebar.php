@@ -7,10 +7,7 @@
 
 			<?php $post_desc = get_post(POST_DESCRIPTION); ?>
 			
-			<h1><?php echo $post_desc->post_title?></h1>
-			<hr>
-			<p><?php echo $post_desc->post_content; ?></p>
-			<hr>
+			<?php echo $post_desc->post_content; ?>
 			
 		<?php else : ?>
 		

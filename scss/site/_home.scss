@@ -7,7 +7,7 @@
 		overflow: hidden;
 		@include transition(all, 300ms, ease-in-out);
 		.thumb-overlay {
-			background: rgba($snow, .9);
+			background: rgba($jet, .66);
 			position: absolute;
 			top: 0;
 			bottom: 0;
@@ -15,21 +15,19 @@
 			right: 0;
 			@include transition(all, 300ms, ease-in-out);
 		}
-		img {
-			max-width: 100% !important;
-		}
 		h2 {
-			width: 100%;
+			width: 75%;
 			position: absolute;
 			z-index: 800;
-			bottom: 0;
-			color: $secondary-color;
+			bottom: rem-calc(50);
+			color: $white;
 			padding: rem-calc(20);
 			margin: 0;
 			line-height: rem-calc(26);
 			font-size: $h2-font-size;
 			@include transition(all, 300ms, ease-in-out);
-
+			border-top: solid 1px rgba($primary-color, .5);
+			border-bottom: solid 1px rgba($primary-color, .5);
 		}
 		&:hover {
 			.thumb-overlay {
@@ -44,16 +42,22 @@
 	}
 }
 
-// Responsive mobile et tablette
+// Responsive mobile et tablette - C'est pareil pour tablette et mobile
 @media #{$small-only} {
 	.home-thumb {
 		opacity: 1;
 		h2 {
+			max-height: 33%;
+			bottom: 33%;
+			width: 75%;
+			left: 12.5%;
+			right: 12.5%;
+			// margin: auto;
 			text-align: center;
-			top: 0;
-			bottom: 0;
-			font-size: $h2-font-size;
-			// border-bottom: solid 5px rgba($primary-color, 1);
+			padding:  rem-calc(15);
+			font-size: $h3-font-size;
+			border-top: solid 1px rgba($white, .5);
+			border-bottom: solid 1px rgba($white, .5);
 		}
 	}
 }
@@ -62,16 +66,22 @@
 	.home-thumb {
 		opacity: 1;
 		h2 {
+			max-height: 33%;
+			bottom: 33%;
+			width: 75%;
+			left: 12.5%;
+			right: 12.5%;
+			// margin: auto;
 			text-align: center;
-			top: 0;
-			bottom: 0;
+			padding:  rem-calc(15);
 			font-size: $h3-font-size;
+			border-top: solid 1px rgba($white, .5);
+			border-bottom: solid 1px rgba($white, .5);
 		}
 	}
 }
 
-
-.inset-shadow {
-	-webkit-box-shadow: 30px 0 30px -30px rgba($jet, .25) inset;
-	box-shadow: 30px 0 30px -30px rgba($jet, .25) inset;
-}
+// .inset-shadow {
+// 	-webkit-box-shadow: 30px 0 30px -30px rgba($jet, .25) inset;
+// 	box-shadow: 30px 0 30px -30px rgba($jet, .25) inset;
+// }

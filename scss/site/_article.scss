@@ -2,6 +2,9 @@
 	.padding-page {
 		padding-top: rem-calc(70);
 		padding-bottom: rem-calc(50);
+		a {
+			text-decoration: underline;
+		}
 	}
 	h1, h2 {
 		letter-spacing: rem-calc(2);

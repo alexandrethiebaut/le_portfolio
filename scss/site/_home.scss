@@ -2,6 +2,11 @@
 // HOME PAGE
 
 @media #{$small-up} {
+	.this-is-homepage {
+		h1 {
+			font-size: 5rem;
+		}
+	}
 	.pos-home-full {
 		position: fixed;
 		left: 0;
@@ -17,7 +22,7 @@
 		overflow: hidden;
 		@include transition(all, 300ms, ease-in-out);
 		.thumb-overlay {
-			background: rgba($jet, .66);
+			background: rgba($jet, .80);
 			position: absolute;
 			top: 0;
 			bottom: 0;
@@ -36,8 +41,8 @@
 			line-height: rem-calc(26);
 			font-size: $h2-font-size;
 			@include transition(all, 300ms, ease-in-out);
-			border-top: solid 1px rgba($primary-color, .5);
-			border-bottom: solid 1px rgba($primary-color, .5);
+			border-top: solid 1px rgba($white, .5);
+			border-bottom: solid 1px rgba($white, .5);
 		}
 		&:hover {
 			.thumb-overlay {

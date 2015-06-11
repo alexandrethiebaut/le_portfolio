@@ -33,6 +33,9 @@
 		text-align: center;
 		// padding: rem-calc(0);
 		background: rgba($white, 1);
+		a {
+			text-decoration: none;
+		}
 		.icon-grid {
 			position: relative;
 			left: 2px;

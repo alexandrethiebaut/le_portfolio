@@ -12,6 +12,13 @@
 	}
 }
 
+@media #{$small-only} {
+	#menu-off-canvas:hover {
+		background-color: $white !important;
+		color: $jet !important;
+	}
+}
+
 /*
  * Global style for le menu ;)
  */

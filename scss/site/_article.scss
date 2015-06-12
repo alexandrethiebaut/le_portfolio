@@ -23,6 +23,17 @@
 	}
 }
 
+@media #{$large-up} {
+	.is-fixed-and-scrollable {
+		position: fixed;
+		max-height: 100vh;
+		overflow-y: auto;
+	}
+	::-webkit-scrollbar {
+		width: 0 !important;
+	}
+}
+
 /*
  * Style pour la nav entre articles
  */

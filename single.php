@@ -11,19 +11,18 @@
 
 		<article <?php post_class() ?> >
 
-			<header class="small-offset-1 small-10 large-offset-1 large-3 columns padding-page">
+			<header class="small-offset-1 small-10 large-offset-1 large-3 columns padding-page is-fixed-and-scrollable">
 
 				<div class="row">
 
 					<div class="small-12 large-12 columns">
 						<h1 class="entry-title"><?php the_title(); ?></h1>
 						<hr>
+						<?php the_content(); ?>
+						<hr>
 					</div>
 					
 				</div>
-
-				<?php the_content(); ?>
-				<hr>
 
 				<div class="small-12 small-centered columns nav-between-articles">
 					
@@ -38,15 +37,15 @@
 			<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 
 			<?php $field = get_fields(); ?>
+			<?php if($field) : ?>	
+				<?php foreach ($field as $k => $v) : ?>
+				
+					<div class="entry-content small-12 large-7 right columns">
+						<img src="<?php echo $field[$k]['sizes']['showcase-thumbnail']; ?>" alt="<?php echo $field[$k]['title']; ?>">
+					</div>
 
-			<?php foreach ($field as $k => $v) : ?>
-			
-				<div class="entry-content small-12 large-7 right columns">
-					<img src="<?php echo $field[$k]['sizes']['showcase-thumbnail']; ?>" alt="<?php echo $field[$k]['title']; ?>">
-				</div>
-
-			<?php endforeach; ?>
-
+				<?php endforeach; ?>
+			<?php endif; ?>
 		</article>
 
 	<?php endwhile;?>

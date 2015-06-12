@@ -7,6 +7,9 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	wp_enqueue_style( 'Main Stylesheet', get_stylesheet_directory_uri() . '/css/foundation.css' );
 	wp_enqueue_style( 'Font Icon Stylesheet', get_stylesheet_directory_uri() . '/css/fonticon.css');
 
+	// Google analytics
+	wp_register_script('ga', get_template_directory_uri() . '/js/custom/ga.js');
+
 	// Deregister the jquery version bundled with wordpress
 	wp_deregister_script( 'jquery' );
 
@@ -36,6 +39,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	wp_register_script( 'customJS', get_template_directory_uri() . '/js/custom/custom.js', array('jquery'));
 
 	// Enqueue all registered scripts
+	wp_enqueue_script( 'ga' );
 	wp_enqueue_script( 'modernizr' );
 	wp_enqueue_script( 'fastclick' );
 	wp_enqueue_script( 'jquery' );

@@ -2,8 +2,11 @@
 	.padding-page {
 		padding-top: rem-calc(70);
 		padding-bottom: rem-calc(50);
+	}
+	.entry-content {
 		a {
-			text-decoration: underline;
+			text-decoration: none;
+			border-bottom: solid 2px rgba($primary-color, 1);
 		}
 	}
 	h1, h2 {

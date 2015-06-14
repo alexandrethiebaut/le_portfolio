@@ -13,7 +13,7 @@
 
 <div class="row">
 	
-	<div class="small-offset-1 small-10 medium-offset-1 medium-6 columns padding-page">
+	<div class="small-offset-1 small-10 medium-offset-1 medium-6 columns padding-page entry-content">
 
 		<div class="this-is-homepage">
 			<?php echo $post_desc->post_content; ?>

@@ -5,11 +5,36 @@
 	footer.row {
 		height: rem-calc(0);
 		background: rgba($jet, 1);
-
 	}
 }
 
 // FOOTER
+@media #{$large-up} {
+	#main-footer {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 2;
+	}
+}
+#main-footer {
+	&>span {
+		margin-left: rem-calc(10px);
+	}
+	font-size: rem-calc(10);
+	font-family: Arial, sans-serif;
+	text-transform: uppercase;
+	color: rgba($white, .33);
+	background-color: $secondary-color;
+    padding: rem-calc(10) rem-calc(20);
+    a {
+    	margin: 0 rem-calc(5);
+    	span {
+    		font-size: 14px;
+    	}
+    }
+}
 
 #loading {
 	position: fixed; 
